@@ -85,7 +85,7 @@ $(document).ready(function() {
 	setTimeout(function(){
 		tempo = escrever($('#titleHeader'),"U mad?");
 		$("#imgIe").attr("src","ie_troll.jpg");
-	}, tempo + 3000);
+	}, tempo + 3000 + 10000);
 	
 
 	/*var tempo = escrever($('#lbltexto'),"Texto de teste.");
