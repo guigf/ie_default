@@ -1,0 +1,7 @@
+Clonar repositório: 
+git clone https://github.com/guigf/ie_default.git
+
+Fazer push:
+git add .
+git commit -m "Meu primeiro pushão@GFT"
+git push origin master

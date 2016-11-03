@@ -94,7 +94,12 @@ $(document).ready(function() {
 
 			setTimeout(function(){
 				tempo = escrever($('#titleHeader'),"U mad?");
-				$("#imgIe").attr("src","ie_troll.jpg");
+
+				$("#imgIe").fadeOut(400, function() {
+		            $("#imgIe").attr('src','ie_troll.jpg');
+		        }).fadeIn(400);
+
+				//$("#imgIe").attr("src","ie_troll.jpg");
 			}, tempo + 8000);
 		}
 	};
