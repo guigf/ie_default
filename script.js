@@ -95,7 +95,7 @@ $(document).ready(function() {
 			setTimeout(function(){
 				tempo = escrever($('#titleHeader'),"U mad?");
 				$("#imgIe").attr("src","ie_troll.jpg");
-			}, tempo + 7000);
+			}, tempo + 8000);
 		}
 	};
 
