@@ -109,15 +109,13 @@ $(document).ready(function() {
 
 			tempo += escrever($('#titleHeader'),"Thought it would be that easy?",tempo) + 2000;
 
-			tempo += escrever($('#titleHeader'),"Poor baby :/",tempo) + 2000;
+			tempo += escrever($('#titleHeader'),"Now it's time for my little revenge...",tempo) + 2000;
 
-			tempo += escrever($('#titleHeader'),"But hey, this is not even a tiny bit of what I've been through all of these years :)",tempo) + 2000;
-
-			tempo += escrever($('#titleHeader'),"Do you know how does it fell to be rejected over and over again?",tempo) + 2000;
+			tempo += escrever($('#titleHeader'),"Do you know what does it fells like to be rejected over and over again?",tempo) + 2000;
 			
 			tempo += escrever($('#titleHeader'),'"IE only purpose is to install chrome, mimimimi"',tempo) + 2000;
 
-			tempo += escrever($('#titleHeader'),"Wel...",tempo) + 2000;
+			tempo += escrever($('#titleHeader'),"If you think this way, Wel...",tempo) + 2000;
 
 			tempo += escrever($('#titleHeader'),"FUCK YOU THEN",tempo) + 2000;
 
