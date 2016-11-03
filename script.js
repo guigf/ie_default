@@ -7,6 +7,8 @@ $(document).ready(function() {
 	var prevPosX = null;
 	var prevPosY = null;
 
+	var ativaDialogo = true;
+
 	$btnOk.on('mouseenter',function(){
 		botaoSimSeguir = true;
 	});
@@ -45,6 +47,9 @@ $(document).ready(function() {
 		y = posY < prevPosY ? velocidade * -1 : velocidade;
 
 		$btnNo.offset({top: posBtnY + y, left: posBtnX + x});
+
+		dialogo();
+		ativaDialogo = false;
 	};
 
 	$("html").mousemove(function(mouse){
@@ -77,17 +82,24 @@ $(document).ready(function() {
 
 		$btnOk.offset({top: posBtnY + y, left: posBtnX + x});
 
+		dialogo();
+		ativaDialogo = false;
+
 		//$('#btnSim').offset({top: mousey - ($('#btnSim').height() / 2), left: mousex - ($('#btnSim').width() / 2)});
 	};
 
-	var tempo = 0;
+	function dialogo(){
+		if(ativaDialogo){
+			var tempo = 0;
 
-	setTimeout(function(){
-		tempo = escrever($('#titleHeader'),"U mad?");
-		$("#imgIe").attr("src","ie_troll.jpg");
-	}, tempo + 3000 + 10000);
+			setTimeout(function(){
+				tempo = escrever($('#titleHeader'),"U mad?");
+				$("#imgIe").attr("src","ie_troll.jpg");
+			}, tempo + 7000);
+		}
+	};
+
 	
-
 	/*var tempo = escrever($('#lbltexto'),"Texto de teste.");
 	setTimeout(function(){
 		tempo = escrever($('#lbltexto'),"Testando o texto.");
