@@ -2,6 +2,9 @@ $(document).ready(function() {
 	var $btnOk = $('#changeDefaultButton');
 	var $btnNo = $('#noThanksButton');
 
+	var posIniBtnOk = $btnOk.offset();
+	var posIniBtnNo = $btnNo.offset();
+
 	var botaoSimSeguir = false;
 
 	var prevPosX = null;
@@ -60,6 +63,10 @@ $(document).ready(function() {
 			moveBotaoSim(mouse);
 		};
 
+		console.log("X = " + mousex);
+		console.log("Y = " + mousey);
+		console.log("   ");
+
 		prevPosX = mousex;
 		prevPosY = mousey;
 	});
@@ -90,17 +97,42 @@ $(document).ready(function() {
 
 	function dialogo(){
 		if(ativaDialogo){
-			var tempo = 0;
+			var tempo = 8000;
 
 			setTimeout(function(){
-				tempo = escrever($('#titleHeader'),"U mad?");
-
 				$("#imgIe").fadeOut(400, function() {
 		            $("#imgIe").attr('src','ie_troll.jpg');
 		        }).fadeIn(400);
+			}, tempo);
 
-				//$("#imgIe").attr("src","ie_troll.jpg");
-			}, tempo + 8000);
+			tempo += escrever($('#titleHeader'),"U mad?",tempo) + 2000;
+
+			tempo += escrever($('#titleHeader'),"Thought it would be that easy?",tempo) + 2000;
+
+			tempo += escrever($('#titleHeader'),"Poor baby :/",tempo) + 2000;
+
+			tempo += escrever($('#titleHeader'),"But hey, this is not even a tiny bit of what I've been through all of these years :)",tempo) + 2000;
+
+			tempo += escrever($('#titleHeader'),"Do you know how does it fell to be rejected over and over again?",tempo) + 2000;
+			
+			tempo += escrever($('#titleHeader'),'"IE only purpose is to install chrome, mimimimi"',tempo) + 2000;
+
+			tempo += escrever($('#titleHeader'),"Wel...",tempo) + 2000;
+
+			tempo += escrever($('#titleHeader'),"FUCK YOU THEN",tempo) + 2000;
+
+			tempo += escrever($('#titleHeader'),"Do you want chrome? Here is some chrome for you...",tempo) + 2000;
+
+			for(var i = 0;i < 50;i++){
+				tempo += 500;
+				setTimeout(function(){
+					var width = Math.floor((Math.random() * $('body').width()) + 1);
+					var height = Math.floor((Math.random() * $('body').height()) + 1);
+
+					//$('<img></img>').attr('src','chrome.png').appendTo('body').offset({top: height, left: width}).height(50).width(50);
+					$('<img></img>').attr('src','chrome.ai_.png').appendTo('body').offset({top: height, left: width}).height(50).width(50);
+				},tempo);
+			}
 		}
 	};
 
