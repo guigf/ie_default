@@ -16,34 +16,31 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Internet Explorer is not your default browser</title>
+	<title>Chrome (not Internet Explorer) is not your default browser</title>
 </head>
 <body onload="javascript:flipLayout()">
-	<!-- <label id="lbltexto"></label>
-	<button id="btnSim">Sim</button>
-	<button id="btnNao">Não</button> -->
 
 	<div id="contentContainer" class="mainContent">
 		<h1 id="titleHeader" class="title" style="left: 0px; top: 0px;">
-			Don’t miss out on the browser built for Windows
+			Don’t miss out on the browser (not) built for Windows
 		</h1>
 		<div class="column1" id="column1">
 			<div>
 				<div id="imageHolder" style="float:left;margin-right:20px;">
-					<img src="../img/immersiveLogo.png" id="imgIe" width="120px" height="120px" alt="Internet Explorer 10 logo" >
+					<img src="../img/chrome.ai_.png" id="imgIe" width="120px" height="120px" alt="Internet Explorer 10 logo" >
 				</div>
 				<div id="messageHolder" class="normalText">
-					Set Internet Explorer as your default browser to get a fast, full-screen browser that’s perfect for touch.
+					Set CHROME (not Internet Explorer) as your default browser to get a slow, not-full-screen browser that’s not perfect for touch.
 				</div>
 			</div>
 			<br/>
 			<br/>
 			<div id="buttonHolder" style="clear:both; text-align:right;">
-				<button id="changeDefaultButton" class="defaultButton changeButton" onclick="javascript:window.external.msChangeDefaultBrowser(true)">
-					Set default browser
+				<button id="changeDefaultButton" class="defaultButton changeButton" onclick="">
+					Set Chrome as your default browser
 				</button>
-				<button id="noThanksButton" class="defaultButton noThanksButton" onclick="javascript:window.external.msChangeDefaultBrowser(false)">
-					No thanks
+				<button id="noThanksButton" class="defaultButton noThanksButton" onclick="setIeDefault();">
+					No thanks, I prefer Internet Explorer
 				</button>
 				<br/>
 			</div>

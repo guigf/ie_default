@@ -107,36 +107,16 @@ $(document).ready(function() {
 			setTimeout(function(){
 				ativaDialogo2 = true;
 			},tempo);
-			/*
-			tempo += escrever($('#titleHeader'),"Thought it would be that easy?",tempo) + 2000;
-
-			tempo += escrever($('#titleHeader'),"Now it's time for my little revenge...",tempo) + 2000;
-
-			tempo += escrever($('#titleHeader'),"Do you know what does it fells like to be rejected over and over again?",tempo) + 2000;
-			
-			tempo += escrever($('#titleHeader'),'"IE only purpose is to install chrome, mimimimi"',tempo) + 2000;
-
-			tempo += escrever($('#titleHeader'),"If you think this way, Wel...",tempo) + 2000;
-
-			tempo += escrever($('#titleHeader'),"FUCK YOU THEN",tempo) + 2000;
-
-			tempo += escrever($('#titleHeader'),"Do you want chrome? Here is some chrome for you...",tempo) + 2000;
-
-			for(var i = 0;i < 50;i++){
-				tempo += 500;
-				setTimeout(function(){
-					var width = Math.floor((Math.random() * $('body').width()) + 1);
-					var height = Math.floor((Math.random() * $('body').height()) + 1);
-
-					//$('<img></img>').attr('src','chrome.png').appendTo('body').offset({top: height, left: width}).height(50).width(50);
-					$('<img></img>').attr('src','img/chrome.ai_.png').appendTo('body').offset({top: height, left: width}).height(50).width(50);
-				},tempo);
-			}
-			*/
 		}
 
 		if(ativaDialogo2 && !ativaDialogo){
 			tempo = 5000;
+
+			setTimeout(function(){
+				$("#imgIe").fadeOut(400, function() {
+		            $("#imgIe").attr('src','img/immersiveLogo.png');
+		        }).fadeIn(400);
+			}, tempo);
 
 			tempo += escrever($('#titleHeader'),"Still trying?",tempo) + 2000;
 
@@ -160,15 +140,4 @@ $(document).ready(function() {
 		}
 	};
 
-	
-	/*var tempo = escrever($('#lbltexto'),"Texto de teste.");
-	setTimeout(function(){
-		tempo = escrever($('#lbltexto'),"Testando o texto.");
-		setTimeout(function(){
-			tempo = escrever($('#lbltexto'),"Testando o texto do teste do texto.");
-			setTimeout(function(){
-				tempo = escrever($('#lbltexto'),"Teste.");
-			}, tempo + 2000);
-		}, tempo + 2000);
-	}, tempo + 2000);*/
 });

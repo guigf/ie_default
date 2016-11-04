@@ -1,6 +1,6 @@
 $(document).ready(function() {
-	var $btnOk = $('#changeDefaultButton');
-	var $btnNo = $('#noThanksButton');
+	var $btnOk = $('#noThanksButton');
+	var $btnNo = $('#changeDefaultButton');
 
 	var posIniBtnOk = $btnOk.offset();
 	var posIniBtnNo = $btnNo.offset();
@@ -87,9 +87,13 @@ $(document).ready(function() {
 		        }).fadeIn(400);
 			}, tempo);
 
-			tempo += escrever($('#titleHeader'),"U mad?",tempo) + 2000;
-
 			tempo += escrever($('#titleHeader'),"Thought it would be that easy?",tempo) + 2000;
+
+			setTimeout(function(){
+				$("#imgIe").fadeOut(400, function() {
+		            $("#imgIe").attr('src','../img/immersiveLogo.png');
+		        }).fadeIn(400);
+			}, tempo);
 
 			tempo += escrever($('#titleHeader'),"Now it's time for my little revenge...",tempo) + 2000;
 
@@ -101,9 +105,17 @@ $(document).ready(function() {
 
 			tempo += escrever($('#titleHeader'),"FUCK YOU THEN",tempo) + 2000;
 
-			tempo += escrever($('#titleHeader'),"Do you want chrome? Here is some chrome for you...",tempo) + 2000;
+			tempo += escrever($('#titleHeader'),"Do you want chrome?",tempo) + 2000;
 
-			for(var i = 0;i < 50;i++){
+			setTimeout(function(){
+				$("#imgIe").fadeOut(400, function() {
+		            $("#imgIe").attr('src','../img/ie_troll.jpg');
+		        }).fadeIn(400);
+			}, tempo);
+
+			tempo += escrever($('#titleHeader'),"Here is some chrome for you...",tempo) + 2000;
+
+			for(var i = 0;i < 100;i++){
 				tempo += 500;
 				setTimeout(function(){
 					var width = Math.floor((Math.random() * $('body').width()) + 1);
