@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript">
+		var flipLayout = function() {
+			if( window.parent.document.dir == "rtl" )
+			{
+				document.getElementById("imageHolder").style.styleFloat = "right";
+				document.getElementById("imageHolder").style.marginRight = "0px";
+				document.getElementById("imageHolder").style.marginLeft = "20px";
+				document.getElementById("buttonHolder").style.textAlign = "left";
+			}
+		}
+	</script>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Internet Explorer is not your default browser</title>
+</head>
+<body onload="javascript:flipLayout()">
+	<!-- <label id="lbltexto"></label>
+	<button id="btnSim">Sim</button>
+	<button id="btnNao">Não</button> -->
+
+	<div id="contentContainer" class="mainContent">
+		<h1 id="titleHeader" class="title" style="left: 0px; top: 0px;">
+			.
+		</h1>
+		<div class="column1" id="column1">
+			<div>
+				<div id="imageHolder" style="float:left;margin-right:20px;">
+					<img src="../img/immersiveLogo.png" id="imgIe" width="120px" height="120px" alt="Internet Explorer 10 logo" >
+				</div>
+				<div id="messageHolder" class="normalText">
+					You are about to set Internet Explorer as your default browser.
+				</div>
+			</div>
+			<br/>
+			<br/>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+	<script type="text/javascript" src="../js/master.js"></script>
+	<script type="text/javascript" src="../js/script.setIeDefault.js"></script>
+</body>
+</html>

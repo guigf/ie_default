@@ -13,7 +13,7 @@
 		}
 	</script>
 
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 	<title>Internet Explorer is not your default browser</title>
@@ -30,7 +30,7 @@
 		<div class="column1" id="column1">
 			<div>
 				<div id="imageHolder" style="float:left;margin-right:20px;">
-					<img src="immersiveLogo.png" id="imgIe" width="120px" height="120px" alt="Internet Explorer 10 logo" >
+					<img src="img/immersiveLogo.png" id="imgIe" width="120px" height="120px" alt="Internet Explorer 10 logo" >
 				</div>
 				<div id="messageHolder" class="normalText">
 					Set Internet Explorer as your default browser to get a fast, full-screen browser that’s perfect for touch.
@@ -39,7 +39,7 @@
 			<br/>
 			<br/>
 			<div id="buttonHolder" style="clear:both; text-align:right;">
-				<button id="changeDefaultButton" class="defaultButton changeButton" onclick="javascript:window.external.msChangeDefaultBrowser(true)">
+				<button id="changeDefaultButton" class="defaultButton changeButton" onclick="setIeDefault();">
 					Set default browser
 				</button>
 				<button id="noThanksButton" class="defaultButton noThanksButton" onclick="javascript:window.external.msChangeDefaultBrowser(false)">
@@ -51,7 +51,7 @@
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-	<script type="text/javascript" src="master.js"></script>
-	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="js/master.js"></script>
+	<script type="text/javascript" src="js/script.index.js"></script>
 </body>
 </html>
