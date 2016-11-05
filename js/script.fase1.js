@@ -101,7 +101,7 @@ $(document).ready(function() {
 			
 			tempo += escrever($('#titleHeader'),'"IE only purpose is to install chrome, mimimimi"',tempo) + 2000;
 
-			tempo += escrever($('#titleHeader'),"If you think this way, Wel...",tempo) + 2000;
+			tempo += escrever($('#titleHeader'),"If you think this way, well...",tempo) + 2000;
 
 			tempo += escrever($('#titleHeader'),"FUCK YOU THEN",tempo) + 2000;
 
