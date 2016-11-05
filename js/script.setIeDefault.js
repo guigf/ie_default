@@ -9,7 +9,7 @@ $(document).ready(function() {
 
 		tempo += escrever($('#titleHeader'),"I mean...",tempo) + 2000;
 
-		tempo += escrever($('#titleHeader'),"Congratualtions!",tempo) + 3000;
+		tempo += escrever($('#titleHeader'),"Congratulations!",tempo) + 3000;
 
 		tempo += escrever($('#titleHeader'),"Now I'm going to set everything up for you ^^",tempo) + 2000;
 
