@@ -11,10 +11,10 @@ $(document).ready(function() {
 
 		tempo += escrever($('#titleHeader'),"You are not suposed to be here yet",tempo) + 2000;
 
-		tempo += escrever($('#titleHeader'),"So get the hell out",tempo) + 2000;
+		tempo += escrever($('#titleHeader'),"So get the hell out",tempo) + 3000;
 
 		setTimeout(function(){
 			location.href = "../index.html";
-		},2000);
+		},tempo);
 	};
 });

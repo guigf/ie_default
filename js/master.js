@@ -27,9 +27,9 @@ function setIeDefaultIndex(){
 };
 
 function cheater(){
-	location.href = "cheater";
+	location.href = "cheater.html";
 };
 
 function cheaterIndex(){
-	location.href = "fases/cheater";
+	location.href = "fases/cheater.html";
 };

@@ -95,13 +95,31 @@ $(document).ready(function() {
 		        }).fadeIn(400);
 			}, tempo);
 
-			tempo += escrever($('#titleHeader'),"Now it's time for my little revenge...",tempo) + 2000;
+			tempo += escrever($('#titleHeader'),"I don't get it, why do you all hate me so much?",tempo) + 2000;
+
+			tempo += escrever($('#titleHeader'),"Is it because I'm a little bit slow?",tempo) + 2000;
+
+			setTimeout(function(){
+				$("#imgIe").fadeOut(400, function() {
+		            $("#imgIe").attr('src','../img/sad_ie.png');
+		        }).fadeIn(400);
+			}, tempo);
+
+			tempo += escrever($('#titleHeader'),"This makes me really sad",tempo) + 2000;
 
 			tempo += escrever($('#titleHeader'),"Do you know what does it fells like to be rejected over and over again?",tempo) + 2000;
 			
-			tempo += escrever($('#titleHeader'),'"IE only purpose is to install chrome, mimimimi"',tempo) + 2000;
+			tempo += escrever($('#titleHeader'),'They say my only purpose is to install Chrome',tempo) + 2000;
 
-			tempo += escrever($('#titleHeader'),"If you think this way, well...",tempo) + 2000;
+			tempo += escrever($('#titleHeader'),"Do you think this way as well?",tempo) + 2000;
+
+			tempo += escrever($('#titleHeader'),"Do you? Well...",tempo) + 2000;
+
+			setTimeout(function(){
+				$("#imgIe").fadeOut(400, function() {
+		            $("#imgIe").attr('src','../img/immersiveLogo.png');
+		        }).fadeIn(400);
+			}, tempo);
 
 			tempo += escrever($('#titleHeader'),"FUCK YOU THEN",tempo) + 2000;
 
@@ -115,8 +133,8 @@ $(document).ready(function() {
 
 			tempo += escrever($('#titleHeader'),"Here is some chrome for you...",tempo) + 2000;
 
-			for(var i = 0;i < 100;i++){
-				tempo += 500;
+			for(var i = 0;i < 200;i++){
+				tempo += 300;
 				setTimeout(function(){
 					var width = Math.floor((Math.random() * $('body').width()) + 1);
 					var height = Math.floor((Math.random() * $('body').height()) + 1);
