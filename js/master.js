@@ -19,5 +19,17 @@ function setTempoEscrita(elemento,letra,tempo){
 };
 
 function setIeDefault(){
+	location.href = "setIeDefault.html";
+};
+
+function setIeDefaultIndex(){
 	location.href = "fases/setIeDefault.html";
+};
+
+function cheater(){
+	location.href = "cheater";
+};
+
+function cheaterIndex(){
+	location.href = "fases/cheater";
 };

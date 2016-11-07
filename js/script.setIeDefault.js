@@ -13,9 +13,9 @@ $(document).ready(function() {
 
 		tempo += escrever($('#titleHeader'),"Now I'm going to set everything up for you ^^",tempo) + 2000;
 
-		tempo += escrever($('#titleHeader'),"Just wait a minute...",tempo) + 10000;
+		tempo += escrever($('#titleHeader'),"Just wait a minute...",tempo) + 3000;
 
-		tempo += escrever($('#titleHeader'),"A few more time...",tempo) + 6000;
+		tempo += escrever($('#titleHeader'),"A few more time...",tempo) + 3000;
 
 		tempo += escrever($('#titleHeader'),"Relax, I've got this",tempo) + 4000;
 
@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 		tempo += escrever($('#titleHeader'),"Aahn...",tempo) + 2000;
 
-		tempo += escrever($('#titleHeader'),"Oh well, fuck it off...",tempo) + 2000;
+		tempo += escrever($('#titleHeader'),"Oh well, fuck off...",tempo) + 2000;
 
 		tempo += escrever($('#titleHeader'),"Just install chrome already and get the hell out of here ¬¬",tempo) + 2000;
 
